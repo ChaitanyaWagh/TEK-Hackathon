@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Forest Fire Prevention</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of Forest-Fire Occurence
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Contract</b></label>
+            <br>
+          <input placeholder="0: Month to Month, 1: One Year, 2: Two Year" name="Contract" id="first_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Gender</b></label>
+            <br>
+          <input id="last_name" name="gender_Male" placeholder="(1: Male and 0: Female)"  type="text" class="validate">
+
+        </div>
+		<div class="input-field col s4">
+
+          <label for="last_name"><b>Payment Method</b></label>
+            <br>
+          <input id="last_name" name="PaymentMethod_Electronic check" placeholder="If Electronic check put 1"  type="text" class="validate">
+
+        </div>
+		
+		<div class="input-field col s4">
+
+          <label for="last_name"><b>Internet Service</b></label>
+            <br>
+          <input id="last_name" name="InternetService_Fiber optic" placeholder="If Fiber Optic put 1"  type="text" class="validate">
+
+        </div>
+		<div class="input-field col s4">
+
+          <label for="last_name"><b>Monthly Charges</b></label>
+            <br>
+          <input id="last_name" name="MonthlyCharges" placeholder=""  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Tenure</b></label>
+            <br>
+          <input id="_name" name="tenure" placeholder="" type="text" class="validate">
+
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{predLR}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
